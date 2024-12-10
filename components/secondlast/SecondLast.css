@@ -1,0 +1,150 @@
+.second-last-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Enable wrapping for smaller screens */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /* margin: 20px auto; */
+    /* max-width: 1200px; */
+}
+
+.left-div {
+    flex: 1;
+    /* Allows flexible width */
+    display: flex;
+    justify-content: center;
+    width: 703px;
+    height: 300px;
+    object-fit: cover;
+    /* margin: 10px; */
+}
+
+.left-image {
+    width: 700px;
+    /* Ensure the image doesn't overflow */
+    height: 300px;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.right-div {
+    flex: 1;
+    margin: 10px;
+    /* text-align: left; */
+    background-color: #FFF3F9;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.image-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image-name span {
+    color: aqua;
+    /* Accent color for the percentage */
+}
+
+.image-description {
+    font-family: Geist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.email-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.email-input {
+    flex: 2;
+    /* Take more space compared to the button */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-button {
+    flex: 1;
+    /* Adjust button size relative to input */
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: #5CD2DD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.email-button:hover {
+    background: #5CD2DD;
+
+}
+
+@media (max-width: 480px) {
+    .image-name {
+        font-size: 20px;
+    }
+
+    .image-description {
+        font-size: 14px;
+    }
+
+    .email-input,
+    .email-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .second-last-container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        text-align: center;
+        /* Center align text and inputs */
+    }
+
+    .left-div,
+    .right-div {
+        flex: none;
+        /* Full width for smaller screens */
+        width: 100%;
+    }
+
+    .email-section {
+        flex-direction: column;
+        /* Stack input and button */
+        align-items: stretch;
+    }
+
+    .email-input,
+    .email-button {
+        width: 100%;
+        /* Full width for inputs and button */
+    }
+
+    .left-div {
+        margin: 10px auto;
+    }
+
+    .right-div {
+        height: 350px;
+        margin: 10px auto;
+    }
+}

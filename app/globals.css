@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Ensures no horizontal scroll */
+  box-sizing: border-box;
+}
+
+/* Make sure all elements respect the box-sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
