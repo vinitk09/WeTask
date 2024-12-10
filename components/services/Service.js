@@ -1,7 +1,7 @@
 import React from "react";
 import "./Service.css";
 import Image from "next/image";
-import tr from "../assets/Group 116.png";
+import tr from "../assets/group.png";
 
 const Service = () => {
   return (

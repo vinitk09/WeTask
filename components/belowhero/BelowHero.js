@@ -2,7 +2,7 @@ import React from "react";
 import "./BelowHero.css";
 import Image from "next/image";
 
-import cc from "../assets/Card Header.png";
+import cc from "../assets/card.png";
 const BelowHero = () => {
   return (
     <div className="below-hero-containerb">

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import BelowHero from "@/components/belowhero/BelowHero";
 import BelowHero2 from "@/components/belowhero2/BelowHero2";
 import Footer from "@/components/footer/Footer";

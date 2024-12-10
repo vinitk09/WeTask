@@ -1,7 +1,8 @@
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import "./Herosection.css";
-import chair from "../assets/Location Cheese big picture 1.png";
+import chair from "../assets/location.png";
 import b from "../assets/bright.png";
 import lb from "../assets/lessbright.png";
 import vlb from "../assets/verylessbright.png";
